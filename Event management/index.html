@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Celebration Creators - Premier Event Management in Ghaziabad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Celebration Creators</h1>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#discount">Discounts</a></li>
+                <li><a href="#contact">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero" class="hero-section">
+            <h2>Making Your Ghaziabad Events Unforgettable!</h2>
+            <p>From birthdays to corporate galas, we handle every detail with precision and passion.</p>
+            <a href="#contact" class="cta-button">Start Planning</a>
+        </section>
+
+        <hr>
+
+        <section id="services">
+            <h2>Our Event Management Services</h2>
+            <div class="service-grid">
+
+                <div class="service-card">
+                    
+                    <h3>Birthday Parties</h3>
+                    <p>Creative themes, customized decor, and catering options for all ages. Specializing in kids' parties and milestone celebrations.</p>
+                    <p class="starting-price">Base Package: **₹ 10,000**</p>
+                </div>
+
+                <div class="service-card">
+                    
+                    <h3>Corporate Events</h3>
+                    <p>Conferences, product launches, and team building. Professional setup, sound, and lighting right here in NCR.</p>
+                    <p class="starting-price">Base Package: **₹ 25,000**</p>
+                </div>
+
+                <div class="service-card">
+                    
+                    <h3>Wedding Planning</h3>
+                    <p>Complete wedding solutions, from venue selection in Ghaziabad to catering, decor, and vendor management.</p>
+                    <p class="starting-price">Base Package: **₹ 50,000**</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p>"The team managed our 10th-anniversary party flawlessly! The decor was stunning, and the food arrangements were perfect. Highly recommend them for events in Ghaziabad."</p>
+                    <p class="client-name">- Mr. and Mrs. Sharma (Anniversary Event)</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"We used Celebration Creators for our annual corporate seminar. Very professional and great value for the price. The venue setup was exactly as planned."</p>
+                    <p class="client-name">- Priyanka D. (Tech Solutions Pvt. Ltd.)</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="discount">
+            <h2>Check for Special Discounts!</h2>
+            <p>Enter a date to see if you qualify for a special celebration discount.</p>
+            
+            <div class="discount-checker">
+                <label for="event-date">Enter Your Event Date:</label>
+                <input type="date" id="event-date" required>
+                <button id="check-discount-button">Check Discount</button>
+                <p id="discount-result" class="feedback-message"></p>
+                <p class="note">**We offer special **₹ 2,000** discounts for birthdays, anniversaries, and major festivals!**</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Get Started - Book Your Event</h2>
+            <form id="booking-form" class="booking-form">
+                <label for="c-name">Your Full Name:</label>
+                <input type="text" id="c-name" required>
+
+                <label for="c-email">Email Address:</label>
+                <input type="email" id="c-email" required>
+
+                <label for="event-type">Type of Event:</label>
+                <select id="event-type" required>
+                    <option value="">-- Select Event Type --</option>
+                    <option value="Birthday">Birthday Party</option>
+                    <option value="Corporate">Corporate Event</option>
+                    <option value="Wedding">Wedding/Pre-Wedding</option>
+                    <option value="Other">Other</option>
+                </select>
+                
+                <label for="c-budget">Approximate Budget (₹):</label>
+                <input type="number" id="c-budget" min="5000" placeholder="e.g., 25000" required>
+
+                <button type="submit">Send Booking Inquiry</button>
+                <p id="booking-message" class="feedback-message"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Celebration Creators. Planning Excellence in Ghaziabad, UP.</p>
+        <p>Contact us: booking@celebrationcreators.in</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

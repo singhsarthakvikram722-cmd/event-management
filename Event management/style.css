@@ -1,0 +1,264 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    color: #444;
+}
+
+h1, h2 {
+    color: #cc9900; /* Gold/Accent Color */
+    text-align: center;
+}
+
+h3 {
+    color: #004d99; /* Deep Blue */
+}
+
+a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #002244; /* Very Dark Blue */
+    padding: 15px 40px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: #ffcc00; /* Yellow highlight */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://placehold.co/1200x400/004d99/ffffff/text=Event+Decor+Ghaziabad');
+    background-size: cover;
+    border-bottom: 5px solid #cc9900;
+}
+
+.hero-section h2 {
+    font-size: 2.2em;
+    color: #cc9900;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e95420; /* Vibrant Orange/Red */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c44015;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 30px 0;
+}
+
+/* Service Grid */
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: white;
+    border-top: 5px solid #cc9900;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.starting-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e95420;
+    margin: 10px 0;
+}
+
+/* Testimonials */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #fffaf0; /* Light Cream */
+    border-left: 4px solid #cc9900;
+    padding: 20px;
+    width: 45%; 
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.client-name {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Discount Checker */
+.discount-checker {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #e6f7ff; /* Light Blue background for focus */
+    border-radius: 8px;
+    text-align: left;
+}
+
+.discount-checker label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.discount-checker input, .discount-checker button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+#check-discount-button {
+    background-color: #e95420;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+
+/* Booking Form Styling (Uses similar styles as discount checker) */
+.booking-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+.booking-form button {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.05em;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #003366;
+}
+
+.feedback-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
